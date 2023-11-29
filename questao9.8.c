@@ -29,6 +29,14 @@ char enesimo(int n, Node* no) {
 
     return enesimo(n - 1, no->next);
 }
+void mostrarLista(Node* no) {
+    printf("Elementos na lista:\n");
+    while (no != NULL) {
+        printf("%c ", no->data); 
+        no = no->next; 
+    }
+    printf("\n");
+}
 
 int main() {
     Node* c = NULL;
@@ -37,7 +45,7 @@ int main() {
     inserirNoInicio(&c, 'c');
     inserirNoInicio(&c, 'b');
     inserirNoInicio(&c, 'a');
-
+    mostrarLista(c);
     char elemento = enesimo(3, c);
     printf("O elemento na posição 3 é: %c\n", elemento);
 
