@@ -1,3 +1,7 @@
+/*Crie a função recursiva enesimo(n, L), que devolve o n-ésimo item da lista L.
+Por exemplo, para L apontando a lista [a, b, c, d], a chamada enesimo (3, L) deve devolver o item c. 
+Para n inválido, a função deve parar com erro fatal. */
+
 #include <stdio.h>
 #include <stdlib.h>
 
